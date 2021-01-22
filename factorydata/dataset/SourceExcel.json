@@ -1,0 +1,1415 @@
+{
+	"name": "SourceExcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSGen2selflearning",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			},
+			"sheet": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "@sheet",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "@fileName",
+				"folderPath": "dropFolder",
+				"fileSystem": "selflearning"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "VENDORACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "WITHHOLDINGTAXGROUPCODE",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPAYMENTTERMSNAME",
+				"type": "String"
+			},
+			{
+				"name": "LINEDISCOUNTVENDORGROUPCODE",
+				"type": "String"
+			},
+			{
+				"name": "BANKACCOUNTID",
+				"type": "String"
+			},
+			{
+				"name": "CENTRALBANKPURPOSECODE",
+				"type": "String"
+			},
+			{
+				"name": "CENTRALBANKPURPOSETEXT",
+				"type": "String"
+			},
+			{
+				"name": "HASONLYTAKENBIDS",
+				"type": "String"
+			},
+			{
+				"name": "ONHOLDSTATUS",
+				"type": "String"
+			},
+			{
+				"name": "VENDORHOLDRELEASEDATE",
+				"type": "String"
+			},
+			{
+				"name": "CASHDISCOUNTCODE",
+				"type": "String"
+			},
+			{
+				"name": "ISPURCHASEORDERCHANGEREQUESTOVERRIDEALLOWED",
+				"type": "String"
+			},
+			{
+				"name": "ISCHANGEMANAGEMENTACTIVATED",
+				"type": "String"
+			},
+			{
+				"name": "ISCHANGEMANGEMENTOVERRIDEBYVENDORALLOWED",
+				"type": "String"
+			},
+			{
+				"name": "CISCOMPANYREGISTRATIONNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "CISNATIONALINSURANCENUMBER",
+				"type": "String"
+			},
+			{
+				"name": "CISSTATUS",
+				"type": "String"
+			},
+			{
+				"name": "CISUNIQUETAXPAYERREFERENCE",
+				"type": "String"
+			},
+			{
+				"name": "CISVERIFICATIONDATE",
+				"type": "String"
+			},
+			{
+				"name": "CISVERIFICATIONNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "CLEARINGPERIODPAYMENTTERMSID",
+				"type": "String"
+			},
+			{
+				"name": "COMMERCIALREGISTERNAME",
+				"type": "String"
+			},
+			{
+				"name": "COMMERCIALREGISTERINSETNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "COMMERCIALREGISTERSECTION",
+				"type": "String"
+			},
+			{
+				"name": "COMPANYCHAINNAME",
+				"type": "String"
+			},
+			{
+				"name": "SIRETNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "NAFCODEREF",
+				"type": "String"
+			},
+			{
+				"name": "COMPANYTYPE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYCONTACTPERSONID",
+				"type": "String"
+			},
+			{
+				"name": "CREDITLIMIT",
+				"type": "String"
+			},
+			{
+				"name": "CREDITRATING",
+				"type": "String"
+			},
+			{
+				"name": "UNIQUEPOPULATIONREGISTRYCODE",
+				"type": "String"
+			},
+			{
+				"name": "CURRENCYCODE",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099DOINGBUSINESSASNAME",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTLEDGERDIMENSION",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTINVENTORYSTATUSID",
+				"type": "String"
+			},
+			{
+				"name": "DESTINATIONCODE",
+				"type": "String"
+			},
+			{
+				"name": "DIOTCOUNTRYCODE",
+				"type": "String"
+			},
+			{
+				"name": "ISOWNERDISABLED",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTDELIVERYMODEID",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTDELIVERYTERMSCODE",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTTOTALDISCOUNTVENDORGROUPCODE",
+				"type": "String"
+			},
+			{
+				"name": "ETHNICORIGINID",
+				"type": "String"
+			},
+			{
+				"name": "FACTORINGVENDORACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ISWOMANOWNER",
+				"type": "String"
+			},
+			{
+				"name": "FISCALCODE",
+				"type": "String"
+			},
+			{
+				"name": "ISFOREIGNENTITY",
+				"type": "String"
+			},
+			{
+				"name": "FOREIGNVENDORTAXREGISTRATIONID",
+				"type": "String"
+			},
+			{
+				"name": "UPSFREIGHTZONE",
+				"type": "String"
+			},
+			{
+				"name": "ISVENDORLOCATEDINHUBZONE",
+				"type": "String"
+			},
+			{
+				"name": "AREPRICESINCLUDINGSALESTAX",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPROCUMENTWAREHOUSEID",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPURCHASESITEID",
+				"type": "String"
+			},
+			{
+				"name": "INVOICEVENDORACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "BUYERGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "LINEOFBUSINESSID",
+				"type": "String"
+			},
+			{
+				"name": "ISVENDORLOCALLYOWNED",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENTTRANSACTIONCODEREF",
+				"type": "String"
+			},
+			{
+				"name": "MAINCONTACTWORKERPERSONNELNUMBERREF",
+				"type": "String"
+			},
+			{
+				"name": "CHARGEVENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "VENDORINVOICELINEMATCHINGPOLICY",
+				"type": "String"
+			},
+			{
+				"name": "NOTES",
+				"type": "String"
+			},
+			{
+				"name": "ISMINORITYOWNED",
+				"type": "String"
+			},
+			{
+				"name": "MULTILINEDISCOUNTVENDORGROUPCODE",
+				"type": "String"
+			},
+			{
+				"name": "NAMECONTROL",
+				"type": "String"
+			},
+			{
+				"name": "NATIONALITY",
+				"type": "String"
+			},
+			{
+				"name": "NUMBERSEQUENCEGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTOFFSETACCOUNTTYPE",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTOFFSETLEDGERACCOUNT",
+				"type": "String"
+			},
+			{
+				"name": "ISONETIMEVENDOR",
+				"type": "String"
+			},
+			{
+				"name": "DIOTOPERATIONTYPE",
+				"type": "String"
+			},
+			{
+				"name": "NATIONALREGISTRYNUMBERID",
+				"type": "String"
+			},
+			{
+				"name": "PARTY",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPAYMENTDAYNAME",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENTID",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTVENDORPAYMENTMETHODNAME",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPAYMENTSCHEDULENAME",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENTSPECIFICATIONID",
+				"type": "String"
+			},
+			{
+				"name": "PRICEVENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "WILLPURCHASEORDERINCLUDEPRICESANDAMOUNTS",
+				"type": "String"
+			},
+			{
+				"name": "PURCHASEWORKCALENDARID",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPURCHASEORDERPOOLID",
+				"type": "String"
+			},
+			{
+				"name": "RFCFEDERALTAXNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ISFLAGGEDWITHSECONDTIN",
+				"type": "String"
+			},
+			{
+				"name": "BUSINESSSEGMENTCODE",
+				"type": "String"
+			},
+			{
+				"name": "ISSMALLBUSINESS",
+				"type": "String"
+			},
+			{
+				"name": "STATEINSCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "BUSINESSSUBSEGMENTCODE",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTSUPPLEMENTARYPRODUCTVENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "PURCHASEREBATEVENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099BOXIDREF",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099NAMETOUSE",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099FEDERALTAXID",
+				"type": "String"
+			},
+			{
+				"name": "ISREPORTINGTAX1099",
+				"type": "String"
+			},
+			{
+				"name": "SALESTAXGROUPCODE",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099IDTYPE",
+				"type": "String"
+			},
+			{
+				"name": "ISWITHHOLDINGTAXCALCULATED",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTCASHDISCOUNTUSAGE",
+				"type": "String"
+			},
+			{
+				"name": "TAXEXEMPTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "VENDOREXCEPTIONGROUPIDREF",
+				"type": "String"
+			},
+			{
+				"name": "VENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "INVOICEDECLARATIONIDREF",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTDESCRIPTIONVENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "DIOTVENDORTYPE",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPRICETOLERANCEGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "ISSERVICEVETERANOWNED",
+				"type": "String"
+			},
+			{
+				"name": "ISW9RECEIVED",
+				"type": "String"
+			},
+			{
+				"name": "ISW9CHECKINGENABLED",
+				"type": "String"
+			},
+			{
+				"name": "OURACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ISNATIONALREGISTRYNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "WITHHOLDINGTAXVENDORTYPE",
+				"type": "String"
+			},
+			{
+				"name": "PURCHASEORDERCONSOLIDATIONDAYOFMONTH",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENTFEEGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "ISVENDORPAYINGBANKPAYMENTFEE",
+				"type": "String"
+			},
+			{
+				"name": "BRAZILIANCCM",
+				"type": "String"
+			},
+			{
+				"name": "BRAZILIANCNPJORCPF",
+				"type": "String"
+			},
+			{
+				"name": "BRAZILIANCNAE",
+				"type": "String"
+			},
+			{
+				"name": "FOREIGNERID",
+				"type": "String"
+			},
+			{
+				"name": "BRAZILIANIE",
+				"type": "String"
+			},
+			{
+				"name": "BRAZILIANNIT",
+				"type": "String"
+			},
+			{
+				"name": "FISCALOPERATIONPRESENCETYPE",
+				"type": "String"
+			},
+			{
+				"name": "ISSERVICEDELIVERYADDRESSBASED",
+				"type": "String"
+			},
+			{
+				"name": "ISPURCHASECONSUMED",
+				"type": "String"
+			},
+			{
+				"name": "BRAZILIANINSSCEI",
+				"type": "String"
+			},
+			{
+				"name": "ISINCOMINGFISCALDOCUMENTGENERATED",
+				"type": "String"
+			},
+			{
+				"name": "ISICMSCONTRIBUTOR",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPORTALCOLLABORATIONMETHOD",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPAYMENTFINECODE",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPAYMENTFINANCIALINTERESTCODE",
+				"type": "String"
+			},
+			{
+				"name": "BIRTHPLACE",
+				"type": "String"
+			},
+			{
+				"name": "BIRTHCOUNTYCODE",
+				"type": "String"
+			},
+			{
+				"name": "RESIDENCEFOREIGNCOUNTRYREGIONID",
+				"type": "String"
+			},
+			{
+				"name": "FISCALDOCUMENTINCOMECODE",
+				"type": "String"
+			},
+			{
+				"name": "BANKTRANSACTIONTYPE",
+				"type": "String"
+			},
+			{
+				"name": "BANKORDEROFPAYMENT",
+				"type": "String"
+			},
+			{
+				"name": "FOREIGNRESIDENT",
+				"type": "String"
+			},
+			{
+				"name": "INVENTORYPROFILE",
+				"type": "String"
+			},
+			{
+				"name": "INVENTORYPROFILETYPE",
+				"type": "String"
+			},
+			{
+				"name": "SEPARATEDIVISIONID",
+				"type": "String"
+			},
+			{
+				"name": "STRUCTUREDEPARTMENT",
+				"type": "String"
+			},
+			{
+				"name": "TAXOPERATIONCODE",
+				"type": "String"
+			},
+			{
+				"name": "TAXPARTNERKIND",
+				"type": "String"
+			},
+			{
+				"name": "TAXAGENT",
+				"type": "String"
+			},
+			{
+				"name": "MODIFIEDDATETIME",
+				"type": "String"
+			},
+			{
+				"name": "MODIFIEDBY",
+				"type": "String"
+			},
+			{
+				"name": "CREATEDDATETIME",
+				"type": "String"
+			},
+			{
+				"name": "CREATEDBY",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION",
+				"type": "String"
+			},
+			{
+				"name": "RECID",
+				"type": "String"
+			},
+			{
+				"name": "NAFCODE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#2",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#2",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#2",
+				"type": "String"
+			},
+			{
+				"name": "RECID#2",
+				"type": "String"
+			},
+			{
+				"name": "VENDORINVOICEDECLARATIONID",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#3",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#3",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#3",
+				"type": "String"
+			},
+			{
+				"name": "RECID#3",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENTTRANSACTIONCODE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#4",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#4",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#4",
+				"type": "String"
+			},
+			{
+				"name": "RECID#4",
+				"type": "String"
+			},
+			{
+				"name": "MAINCONTACTPERSONNELNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#5",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#5",
+				"type": "String"
+			},
+			{
+				"name": "RECID#5",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099BOXID",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099TYPE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#6",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#6",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#6",
+				"type": "String"
+			},
+			{
+				"name": "RECID#6",
+				"type": "String"
+			},
+			{
+				"name": "VENDOREXCEPTIONGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#7",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#7",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#7",
+				"type": "String"
+			},
+			{
+				"name": "RECID#7",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTLEDGERDIMENSIONDISPLAYVALUE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#8",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#8",
+				"type": "String"
+			},
+			{
+				"name": "RECID#8",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTOFFSETLEDGERACCOUNTDISPLAYVALUE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#9",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#9",
+				"type": "String"
+			},
+			{
+				"name": "RECID#9",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSBOOKS",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSLOCATIONROLES",
+				"type": "String"
+			},
+			{
+				"name": "VENDORKNOWNASNAME",
+				"type": "String"
+			},
+			{
+				"name": "LANGUAGEID",
+				"type": "String"
+			},
+			{
+				"name": "VENDORORGANIZATIONNAME",
+				"type": "String"
+			},
+			{
+				"name": "VENDORSEARCHNAME",
+				"type": "String"
+			},
+			{
+				"name": "ORGANIZATIONABCCODE",
+				"type": "String"
+			},
+			{
+				"name": "ORGANIZATIONNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ORGANIZATIONEMPLOYEEAMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "ORGANIZATIONPHONETICNAME",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPARTYNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPARTYTYPE",
+				"type": "String"
+			},
+			{
+				"name": "PERSONANNIVERSARYDAY",
+				"type": "String"
+			},
+			{
+				"name": "PERSONANNIVERSARYMONTH",
+				"type": "String"
+			},
+			{
+				"name": "PERSONANNIVERSARYYEAR",
+				"type": "String"
+			},
+			{
+				"name": "PERSONBIRTHDAY",
+				"type": "String"
+			},
+			{
+				"name": "PERSONBIRTHMONTH",
+				"type": "String"
+			},
+			{
+				"name": "PERSONBIRTHYEAR",
+				"type": "String"
+			},
+			{
+				"name": "PERSONCHILDRENNAMES",
+				"type": "String"
+			},
+			{
+				"name": "PERSONGENDER",
+				"type": "String"
+			},
+			{
+				"name": "PERSONHOBBIES",
+				"type": "String"
+			},
+			{
+				"name": "PERSONFIRSTNAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONMIDDLENAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONLASTNAMEPREFIX",
+				"type": "String"
+			},
+			{
+				"name": "PERSONLASTNAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONINITIALS",
+				"type": "String"
+			},
+			{
+				"name": "PERSONMARITALSTATUS",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPERSONALSUFFIX",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPERSONALTITLE",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPHONETICFIRSTNAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPHONETICLASTNAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPHONETICMIDDLENAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPROFESSIONALSUFFIX",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPROFESSIONALTITLE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYEMAILADDRESS",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYEMAILADDRESSDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "ISPRIMARYEMAILADDRESSIMENABLED",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYEMAILADDRESSPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFAXNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFAXNUMBERDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFAXNUMBEREXTENSION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFAXNUMBERPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYPHONENUMBER",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYPHONENUMBERDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "ISPRIMARYPHONENUMBERMOBILE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYPHONENUMBERPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYTELEX",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYTELEXDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYTELEXPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYURL",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYURLDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYURLPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFACEBOOK",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFACEBOOKDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYFACEBOOKPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYLINKEDIN",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYLINKEDINDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYLINKEDINPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYTWITTER",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYTWITTERDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYTWITTERPURPOSE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYPHONENUMBEREXTENSION",
+				"type": "String"
+			},
+			{
+				"name": "ELECTRONICLOCATIONID",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYCONTACTFAXRECORDID",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYCONTACTPHONERECORDID",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYCONTACTEMAILRECORDID",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYCONTACTURLRECORDID",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#10",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#10",
+				"type": "String"
+			},
+			{
+				"name": "RECID#10",
+				"type": "String"
+			},
+			{
+				"name": "WILLPURCHASEORDERPROCESSINGSUMMARYUPDATEPURCHASEORDER",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#13",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#13",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#13",
+				"type": "String"
+			},
+			{
+				"name": "RECID#13",
+				"type": "String"
+			},
+			{
+				"name": "WILLPRODUCTRECEIPTPROCESSINGSUMMARYUPDATEPURCHASEORDER",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#14",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#14",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#14",
+				"type": "String"
+			},
+			{
+				"name": "RECID#14",
+				"type": "String"
+			},
+			{
+				"name": "WILLRECEIPTSLISTPROCESSINGSUMMARYUPDATEPURCHASEORDER",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#15",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#15",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#15",
+				"type": "String"
+			},
+			{
+				"name": "RECID#15",
+				"type": "String"
+			},
+			{
+				"name": "WILLINVOICEPROCESSINGSUMMARYUPDATEPURCHASEORDER",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#16",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#16",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#16",
+				"type": "String"
+			},
+			{
+				"name": "RECID#16",
+				"type": "String"
+			},
+			{
+				"name": "ISCUSIPIDENTIFICATIONNUMBERAPPLICABLE",
+				"type": "String"
+			},
+			{
+				"name": "CUSIPIDENTIFICATIONNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "CUSIPDETAILS",
+				"type": "String"
+			},
+			{
+				"name": "OIDINVESTORTYPE",
+				"type": "String"
+			},
+			{
+				"name": "OIDNOMINEEDETAILS",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#17",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#17",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#17",
+				"type": "String"
+			},
+			{
+				"name": "RECID#17",
+				"type": "String"
+			},
+			{
+				"name": "COMPOSITIONSCHEME",
+				"type": "String"
+			},
+			{
+				"name": "FOREIGNVENDOR",
+				"type": "String"
+			},
+			{
+				"name": "GTAVENDOR",
+				"type": "String"
+			},
+			{
+				"name": "PREFERENTIALVENDOR",
+				"type": "String"
+			},
+			{
+				"name": "SSIVENDOR",
+				"type": "String"
+			},
+			{
+				"name": "NATUREOFASSESSEE",
+				"type": "String"
+			},
+			{
+				"name": "PANNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "PANREFERENCENUMBER",
+				"type": "String"
+			},
+			{
+				"name": "PANSTATUS",
+				"type": "String"
+			},
+			{
+				"name": "SSIVALIDITYDATE",
+				"type": "String"
+			},
+			{
+				"name": "TCSGROUP",
+				"type": "String"
+			},
+			{
+				"name": "TDSGROUP",
+				"type": "String"
+			},
+			{
+				"name": "ISGSTCOMPOSITIONSCHEMEENABLED",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#18",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#18",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#18",
+				"type": "String"
+			},
+			{
+				"name": "RECID#18",
+				"type": "String"
+			},
+			{
+				"name": "ZAKATREGISTRATIONNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ZAKATFILENUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ISSUBCONTRACTOR",
+				"type": "String"
+			},
+			{
+				"name": "ZAKATSERVICETYPE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#19",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#19",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#19",
+				"type": "String"
+			},
+			{
+				"name": "RECID#19",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCITY",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCOUNTRYREGIONID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCOUNTYID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSDISTRICTNAME",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSLATITUDE",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSLOCATIONID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSLONGITUDE",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSSTATEID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSSTREET",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSBUILDINGCOMPLIMENT",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSSTREETNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSTIMEZONE",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSVALIDFROM",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSVALIDTO",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSZIPCODE",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCOUNTRYREGIONISOCODE",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSPOSTBOX",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCITYINKANA",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSSTREETINKANA",
+				"type": "String"
+			},
+			{
+				"name": "FORMATTEDPRIMARYADDRESS",
+				"type": "String"
+			},
+			{
+				"name": "DUNSNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSRECORDID",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#11",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#11",
+				"type": "String"
+			},
+			{
+				"name": "RECID#11",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSBRAZILIANCNPJORCPF",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSBRAZILIANIE",
+				"type": "String"
+			},
+			{
+				"name": "RECVERSION#12",
+				"type": "String"
+			},
+			{
+				"name": "DATAAREAID#12",
+				"type": "String"
+			},
+			{
+				"name": "PARTITION#12",
+				"type": "String"
+			},
+			{
+				"name": "RECID#12",
+				"type": "String"
+			},
+			{
+				"name": "ENTERPRISENUMBER",
+				"type": "String"
+			}
+		]
+	}
+}
