@@ -16,10 +16,13 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": "@sheet",
+			"sheetName": "Sheet1",
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "@fileName",
+				"fileName": {
+					"value": "@fileName",
+					"type": "Expression"
+				},
 				"folderPath": "dropFolder",
 				"fileSystem": "selflearning"
 			},
