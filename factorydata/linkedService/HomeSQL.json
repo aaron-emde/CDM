@@ -1,0 +1,16 @@
+{
+	"name": "HomeSQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=bastion.zenyatta.one;initial catalog=AxDB;user id=aemde",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3OTdmYmQxZC00MzAyLTRiZjgtYjlhMC0wYjEwODIwMGU0MWMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "HomeSQL",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
