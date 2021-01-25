@@ -1,0 +1,6 @@
+{
+	"name": "HomeSQL",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
