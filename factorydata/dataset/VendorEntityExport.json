@@ -1,0 +1,191 @@
+{
+	"name": "VendorEntityExport",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSGen2selflearning",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "vendor.xlsx",
+				"folderPath": "DMFilesForLoad",
+				"fileSystem": "selflearning"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "VENDORACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "COMPANYNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCITY",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCOUNTRYREGIONID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSCOUNTYID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSSTATEID",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSSTREET",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSZIPCODE",
+				"type": "String"
+			},
+			{
+				"name": "COMPANYCHAINNAME",
+				"type": "String"
+			},
+			{
+				"name": "VENDORGROUPID",
+				"type": "String"
+			},
+			{
+				"name": "CURRENCYCODE",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPAYMENTTERMSNAME",
+				"type": "String"
+			},
+			{
+				"name": "ISREPORTINGTAX1099",
+				"type": "String"
+			},
+			{
+				"name": "MAINCONTACTPERSONNELNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYEMAILADDRESS",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099BOXID",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099FEDERALTAXID",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099TYPE",
+				"type": "String"
+			},
+			{
+				"name": "VENDORKNOWNASNAME",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSDESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "VENDORSEARCHNAME",
+				"type": "String"
+			},
+			{
+				"name": "VENDORORGANIZATIONNAME",
+				"type": "String"
+			},
+			{
+				"name": "VENDORPARTYTYPE",
+				"type": "String"
+			},
+			{
+				"name": "PRIMARYPHONENUMBER",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099IDTYPE",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPURCHASESITEID",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTPROCUMENTWAREHOUSEID",
+				"type": "String"
+			},
+			{
+				"name": "WILLPURCHASEORDERINCLUDEPRICESANDAMOUNTS",
+				"type": "String"
+			},
+			{
+				"name": "TAX1099DOINGBUSINESSASNAME",
+				"type": "String"
+			},
+			{
+				"name": "DEFAULTVENDORPAYMENTMETHODNAME",
+				"type": "String"
+			},
+			{
+				"name": "PAYMENTSPECIFICATIONID",
+				"type": "String"
+			},
+			{
+				"name": "PERSONFIRSTNAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONLASTNAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONMIDDLENAME",
+				"type": "String"
+			},
+			{
+				"name": "PERSONPERSONALSUFFIX",
+				"type": "String"
+			},
+			{
+				"name": "ADDRESSLOCATIONROLES",
+				"type": "String"
+			},
+			{
+				"name": "TAXEXEMPTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "SALESTAXGROUPCODE",
+				"type": "String"
+			},
+			{
+				"name": "INVOICEVENDORACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "LastUpdated",
+				"type": "String"
+			},
+			{
+				"name": "EXPORT_STATUS",
+				"type": "String"
+			},
+			{
+				"name": "PULLED_STATUS",
+				"type": "String"
+			}
+		]
+	}
+}

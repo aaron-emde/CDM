@@ -532,13 +532,6 @@
 								}
 							},
 							{
-								"sink": {
-									"name": "IMPORTSEQUENCE",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
 								"source": {
 									"name": "ADDRESSCOUNTRYREGIONISOCODE",
 									"type": "String",
@@ -548,34 +541,6 @@
 									"name": "ADDRESSCOUNTRYREGIONISOCODE",
 									"type": "String",
 									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"sink": {
-									"name": "DEFINITIONGROUP",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"sink": {
-									"name": "EXECUTIONID",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"sink": {
-									"name": "ISSELECTED",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
-								"sink": {
-									"name": "TRANSFERSTATUS",
-									"type": "Int32",
-									"physicalType": "int"
 								}
 							},
 							{
@@ -684,13 +649,6 @@
 									"name": "VENDORHOLDRELEASEDATE",
 									"type": "DateTime",
 									"physicalType": "datetime"
-								}
-							},
-							{
-								"sink": {
-									"name": "VENDORHOLDRELEASEDATETZID",
-									"type": "Int32",
-									"physicalType": "int"
 								}
 							},
 							{
@@ -1954,13 +1912,6 @@
 								}
 							},
 							{
-								"sink": {
-									"name": "ADDRESSVALIDFROMTZID",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
 								"source": {
 									"name": "ADDRESSVALIDTO",
 									"type": "DateTime",
@@ -1970,13 +1921,6 @@
 									"name": "ADDRESSVALIDTO",
 									"type": "DateTime",
 									"physicalType": "datetime"
-								}
-							},
-							{
-								"sink": {
-									"name": "ADDRESSVALIDTOTZID",
-									"type": "Int32",
-									"physicalType": "int"
 								}
 							},
 							{
