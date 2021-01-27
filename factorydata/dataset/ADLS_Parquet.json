@@ -1,0 +1,27 @@
+{
+	"name": "ADLS_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSGen2selflearning",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ADLSDirectory": {
+				"type": "string"
+			},
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "selflearning"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
