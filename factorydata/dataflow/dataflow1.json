@@ -1,0 +1,20 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "ADLSGen2selflearning",
+						"type": "LinkedServiceReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(allowSchemaDrift: false,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tentity: '',\n\tformat: 'cdm',\n\tmanifestType: 'model',\n\tfolderPath: 'CDM/core/operationsCommon/Entities/SupplyChain/ProcurementAndSourcing',\n\tfileSystem: 'selflearning') ~> source1"
+		}
+	}
+}
