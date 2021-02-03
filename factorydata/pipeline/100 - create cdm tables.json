@@ -47,30 +47,87 @@
 									"mappings": [
 										{
 											"source": {
-												"path": "['name']"
-											},
-											"sink": {
-												"name": "name"
+												"path": "$['documentVersion']"
 											}
 										},
 										{
 											"source": {
-												"path": "['dataType']"
-											},
-											"sink": {
-												"name": "dataType"
+												"path": "$['jsonSchemaSemanticVersion']"
 											}
 										},
 										{
 											"source": {
-												"path": "['isNullable']"
+												"path": "$['imports'][0]['corpusPath']"
+											}
+										},
+										{
+											"source": {
+												"path": "['entityName']"
+											}
+										},
+										{
+											"source": {
+												"path": "['extendsEntity']"
+											}
+										},
+										{
+											"source": {
+												"path": "['exhibitsTraits'][0]['traitReference']"
+											}
+										},
+										{
+											"source": {
+												"path": "['exhibitsTraits'][0]['arguments'][0]['name']"
 											},
 											"sink": {
-												"name": "isNullable"
+												"name": "name",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "['exhibitsTraits'][0]['arguments'][0]['value']"
+											}
+										},
+										{
+											"source": {
+												"path": "['hasAttributes'][0]['name']"
+											},
+											"sink": {
+												"name": "name",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "['hasAttributes'][0]['dataType']"
+											},
+											"sink": {
+												"name": "dataType",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"path": "['hasAttributes'][0]['isNullable']"
+											},
+											"sink": {
+												"name": "isNullable",
+												"type": "Boolean"
+											}
+										},
+										{
+											"source": {
+												"path": "['hasAttributes'][0]['description']"
+											}
+										},
+										{
+											"source": {
+												"path": "['displayName']"
 											}
 										}
 									],
-									"collectionReference": "$['definitions'][0]['hasAttributes']",
+									"collectionReference": "$['definitions']",
 									"mapComplexValuesToString": false
 								}
 							},
@@ -102,6 +159,26 @@
 									}
 								}
 							]
+						},
+						{
+							"name": "Data flow1",
+							"type": "ExecuteDataFlow",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"compute": {
+									"coreCount": 8,
+									"computeType": "General"
+								},
+								"traceLevel": "Fine"
+							}
 						}
 					]
 				}
