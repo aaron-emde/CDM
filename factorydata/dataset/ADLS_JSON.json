@@ -1,0 +1,226 @@
+{
+	"name": "ADLS_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSGen2selflearning",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"cdmPath": {
+				"type": "string"
+			},
+			"jsonFile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().jsonFile",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().cdmPath",
+					"type": "Expression"
+				},
+				"fileSystem": "selflearning"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"schemaVersion": {
+					"type": "string"
+				},
+				"imports": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"uri": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"definitions": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"entityName": {
+								"type": "string"
+							},
+							"extendsEntity": {
+								"type": "string"
+							},
+							"exhibitsTraits": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"traitReference": {
+											"type": "string"
+										},
+										"arguments": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"entityReference": {
+														"type": "object",
+														"properties": {
+															"entityShape": {
+																"type": "string"
+															},
+															"constantValues": {
+																"type": "array",
+																"items": {
+																	"type": "array",
+																	"items": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							},
+							"displayName": {
+								"type": "string"
+							},
+							"description": {
+								"type": "string"
+							},
+							"sourceName": {
+								"type": "string"
+							},
+							"version": {
+								"type": "string"
+							},
+							"hasAttributes": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"attributeGroupReference": {
+											"type": "object",
+											"properties": {
+												"attributeGroupName": {
+													"type": "string"
+												},
+												"exhibitsTraits": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"traitReference": {
+																"type": "string"
+															},
+															"arguments": {
+																"type": "array",
+																"items": {
+																	"type": "object",
+																	"properties": {
+																		"entityReference": {
+																			"type": "object",
+																			"properties": {
+																				"entityShape": {
+																					"type": "string"
+																				},
+																				"constantValues": {
+																					"type": "array",
+																					"items": {
+																						"type": "array",
+																						"items": {
+																							"type": "string"
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												},
+												"members": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"name": {
+																"type": "string"
+															},
+															"relationship": {
+																"type": "string"
+															},
+															"dataType": {
+																"type": "string"
+															},
+															"appliedTraits": {
+																"type": "array",
+																"items": {
+																	"type": "object",
+																	"properties": {
+																		"traitReference": {
+																			"type": "string"
+																		},
+																		"arguments": {
+																			"type": "array",
+																			"items": {
+																				"type": "object",
+																				"properties": {
+																					"name": {
+																						"type": "string"
+																					},
+																					"value": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															},
+															"displayName": {
+																"type": "string"
+															},
+															"description": {
+																"type": "string"
+															},
+															"sourceName": {
+																"type": "string"
+															},
+															"sourceOrdering": {
+																"type": "integer"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"jsonSchemaSemanticVersion": {
+					"type": "string"
+				},
+				"documentVersion": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
