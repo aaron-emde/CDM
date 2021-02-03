@@ -1,0 +1,117 @@
+{
+	"name": "100 - create cdm tables",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.fullPath",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy data1",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "JsonSource",
+									"storeSettings": {
+										"type": "AzureBlobFSReadSettings",
+										"recursive": true,
+										"enablePartitionDiscovery": false
+									},
+									"formatSettings": {
+										"type": "JsonReadSettings"
+									}
+								},
+								"sink": {
+									"type": "AzureSqlSink",
+									"tableOption": "autoCreate"
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"path": "['name']"
+											},
+											"sink": {
+												"name": "name"
+											}
+										},
+										{
+											"source": {
+												"path": "['dataType']"
+											},
+											"sink": {
+												"name": "dataType"
+											}
+										},
+										{
+											"source": {
+												"path": "['isNullable']"
+											},
+											"sink": {
+												"name": "isNullable"
+											}
+										}
+									],
+									"collectionReference": "$['definitions'][0]['hasAttributes']",
+									"mapComplexValuesToString": false
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "ADLS_JSON",
+									"type": "DatasetReference",
+									"parameters": {
+										"cdmPath": {
+											"value": "@item().path",
+											"type": "Expression"
+										},
+										"jsonFile": {
+											"value": "@item().fileName",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "StagingTable",
+									"type": "DatasetReference",
+									"parameters": {
+										"tableName": {
+											"value": "replace(@item().fileName, \".cdm.json\", \"\")",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"fullPath": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
