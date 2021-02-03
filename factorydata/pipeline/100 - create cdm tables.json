@@ -96,7 +96,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"tableName": {
-											"value": "replace(@item().fileName, \".cdm.json\", \"\")",
+											"value": "@replace(item().fileName, '.cdm.json', '')\n",
 											"type": "Expression"
 										}
 									}
